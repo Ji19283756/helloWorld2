@@ -11,7 +11,9 @@ h2 {
 }
 
 /* Adds border color to table */
-table {
+table, th, td{
+    border-width: thin;
+    border-style: solid;
     border-color: aqua;
 }
 
