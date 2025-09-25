@@ -1,0 +1,30 @@
+/* Adds some funk to the paragraphs*/
+p {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 1.5em;
+}
+
+/* Makes the level 2 headers have some red and then shadow for emphasis*/
+h2 {
+    color: red;
+    text-shadow: black 1px 1px 1px;
+}
+
+/* Adds border color to table */
+table {
+    border-color: aqua;
+}
+
+#third {
+    color: green;
+    text-shadow: black 3px 3px 3px;
+}
+
+.large {
+    font-size: 2em;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+}
