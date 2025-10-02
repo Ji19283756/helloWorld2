@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="padding"></div>
+    <!-- Paragraph and button for changing text -->
+    <p id="paragraph">Let's just say I want to change the content here, click below to do that!</p>
+    <button id="changeText">Change Text</button>
+
+    <!-- Form for user -->
+    <form id="greetForm">
+        <input type="text" id="name" placeholder="Enter name">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="greetMessage"></div>
+
+    <!-- List of favorite foods -->
+    <h2>My Favorite Foods</h2>
+    <ul id="foodList"></ul>
+
+    <!-- Checkboxes -->
+    <h2>Courses Taken</h2>
+    <form id="coursesForm">
+        <input type="checkbox" name="course" value="BMGT190H"> BMGT402<br>
+        <input type="checkbox" name="course" value="BMGT394"> BMGT408C<br>
+        <input type="checkbox" name="course" value="BMGT490H"> BMGT302<br>
+        <button type="button" id="submitCourses">Submit</button>
+    </form>
+
+    <p>
+        Right below is a footer taken from boostrap's templates. I chose this component because I believe that it adds
+        a lot to the professional look of a website. In addition, it provides some level of continuity between webpages
+        and always reminds the user, subtly, that this website is part of a design from a certain brand or person.
+    </p>
+
+    <!-- Bootstrap 4 sticky footer template -->
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container text-center">
+        <span class="text-muted">Created by Eric</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS for components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS file for interactivity -->
+    <script src="/static/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,16 +1,23 @@
-/* Adds some funk to the paragraphs*/
 p {
-    font-family: "Comic Sans MS", cursive;
-    font-size: 1.5em;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-size: 1.2em;
+    margin: 5em 30vw 1em 8vw;
 }
 
-/* Makes the level 2 headers have some red and then shadow for emphasis*/
+#paragraph {
+    border: 2px solid;
+    padding: 1em;
+}
+
+#changeText {
+    display: block;
+    margin: 1em 0 2em 8vw;
+}
+
 h2 {
-    color: red;
-    text-shadow: black 1px 1px 1px;
+    margin: 1.5em 0 1em 8vw;
 }
 
-/* Adds border color to table */
 table, th, td{
     border-width: thin;
     border-style: solid;
@@ -23,10 +30,23 @@ table, th, td{
 }
 
 .large {
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .logo {
     width: 150px;
     height: 50px;
+}
+
+form, ul, #greetMessage {
+    margin: 1em 30vw 2em 8vw;
+}
+
+#greetMessage {
+    border-radius: 8px;
+    padding: 0.75em 1.5em;
+}
+
+#padding {
+    padding: 1em;
 }
