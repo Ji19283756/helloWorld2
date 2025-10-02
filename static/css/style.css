@@ -50,3 +50,7 @@ form, ul, #greetMessage {
 #padding {
     padding: 1em;
 }
+
+.blackOutline {
+    border: 1px solid black;
+}
