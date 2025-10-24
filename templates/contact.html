@@ -1,0 +1,61 @@
+{% extends 'header.html' %}
+
+{% block page_title %}Contact {% endblock %}
+
+{% block page_content %}
+    {% if form_submitted %}
+        <div class="col-12">
+            <h2>Thank you for completing our form!</h2>
+        </div>
+        <div class = "col-md-6">
+            <p>First Name:</p>
+        </div>
+        <div class = "col-md-6">
+            <p>{{ request.form.get('first_name')}}</p>
+        </div>
+        <div class = "col-md-6">
+            <p>Last Name:</p>
+        </div>
+        <div class = "col-md-6">
+            <p>{{ request.form.get('last_name')}}</p>
+        </div>
+        <div class = "col-md-6">
+            <p>Email Address:</p>
+        </div>
+        <div class = "col-md-6">
+            <p>{{ request.form.get('email')}}</p>
+        </div>
+        <div class = "col-md-6">
+            <p>Your Comments:</p>
+        </div>
+        <div class = "col-md-6">
+            <p>{{ request.form.get('comments')}}</p>
+        </div>
+    {% else %}
+        <form action="{{ url_for('contact') }}" method="post">
+          <div class="form-group">
+            <label>First Name</label>
+            <input class="form-control" type="text" placeholder="First Name" id="first_name" name="first_name" required>
+          </div>
+
+          <div class="form-group">
+            <label>Last Name</label>
+            <input class="form-control" type="text" placeholder="Last Name" id="last_name" name="last_name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputName">Email address</label>
+            <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Comments</label>
+            <textarea class="form-control" id="comments" rows="3" name="comments" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    {% endif %}
+
+{% endblock %}
