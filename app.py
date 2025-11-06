@@ -227,11 +227,7 @@ def page_not_found(_):
 @role_required(['ADMIN', "MANAGER"])
 def training():
     if current_user.role in ['MANAGER', 'ADMIN']:
-        # Safely grab name and email from the current_user and pass them to the template
-        name = getattr(current_user, 'name', None) or getattr(current_user, 'username', '')
-        email = getattr(current_user, 'email', '')
-        print(name, email, "here")
-        return render_template('training.html', name=name, email=email)
+        return render_template('training.html')
     else:
         flash(f'Invalid request. Please contact support if this problem persists.', 'error')
         return render_template('error.html')
